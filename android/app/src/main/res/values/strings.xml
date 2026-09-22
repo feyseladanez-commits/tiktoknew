@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Creator Donate</string>
+    <string name="accessibility_service_description">Reads the visible TikTok creator username on screen so the floating bubble can show it. Does not read videos, comments, messages, or any other content, and never sends data to TikTok.</string>
+</resources>

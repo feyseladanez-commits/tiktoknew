@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This allows the app to talk to a plain http:// server during local testing
+  (your PC's local IP won't have a valid HTTPS certificate). Before publishing
+  the app publicly, your backend should be deployed with HTTPS and this file's
+  cleartext exception should be removed.
+-->
+<network-security-config>
+    <!--
+      For local testing only: allows cleartext (http://) traffic to ANY address.
+      Before publishing this app, delete this base-config block entirely and rely
+      on your deployed backend's HTTPS connection instead — shipping an app that
+      allows cleartext everywhere is a real security risk for real users.
+    -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

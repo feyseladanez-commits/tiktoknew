@@ -7,8 +7,7 @@ plugins {
 //   gradle assembleDebug -PAPI_BASE_URL=https://your-backend.com/
 // (the GitHub Actions workflow does this via its "api_base_url" input).
 // Must end with a trailing slash.
-val apiBaseUrl: String = (project.findProperty("API_BASE_URL") as String?)
-    ?: "https://your-backend-domain.com/"
+def apiBaseUrl = project.findProperty("API_BASE_URL") ?: "https://your-backend-domain.com/"
 
 android {
     namespace = "com.example.tiktokoverlay"
